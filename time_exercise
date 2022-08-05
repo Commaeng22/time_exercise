@@ -26,4 +26,4 @@ print('time.asctime은 time.localtime에 의해서 반환된 튜플 형태의 �
 print('time.ctime은 항상 현재 시간을 돌려줌 :',time.ctime()) # time.ctime은 항상 현재 시간을 돌려줌 
 print('strftime은 시간에 관계된 세밀한 표현가능 :',time.strftime('%c', time.localtime(time.time())))
 print('특정 날짜와 시간으로 객체 만들기 datetime.datetime으로 마이크로 시간까지 표현 가능(yyyy, m, dd, h, mm, ss, microsec',datetime.datetime(2022, 8, 20, 9, 00, 00, 1))
-print('strftime은 시간에 관계된 세밀한 표현가능 :',time.strftime('%c', time.localtime(time.time())))
+print('strftime로 일반적으로 표기하는 시간 표현가능 :',time.strftime('%Y년%m월%d일 %I:%M:%S %p', time.localtime(time.time())))
